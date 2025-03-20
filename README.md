@@ -7,9 +7,15 @@ This repository contains replication files for the paper **"Addressing Missingne
 The repository is organized as follows:
 
 ```
-├── data/             # Raw and processed datasets
-├── code/             # Scripts for data processing and analysis
-├── results/          # Output files (tables, figures, etc.)
+├── data/                # Cleaned datasets containing case ids and registartion date from Chinese court decisions
+│   ├── court13-17/      # Case id and registration date from civil, criminal and administrative litigation cases filed from 2013 to 2017
+│   ├── court18-22/      # Case id from civil, criminal and administrative first instance litigation cases filed from 2018 to 2022
+├── code/                # Scripts for estimating court missingness and time to decision
+│   ├── transparency/    # Scripts for estimating court missingness
+│   ├── time-to-decision/# Scripts for estimating case filing date
+│   ├── plots/           # Scripts for generating figures
+│   ├── tables/          # Scripts for generating tables
+├── results/          # Output files (tables, figures, logs, etc.)
 ├── README.md         # This file
 └── LICENSE           # License information
 ```
