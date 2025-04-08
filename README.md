@@ -1,7 +1,7 @@
 # Replication Files for Addressing Missingness in Serialized Bureaucratic Data: The Case of Chinese Courts
 
 ## Overview
-This repository contains replication files for the paper **"Addressing Missingness in Serialized Bureaucratic Data: The Case of Chinese Courts"** by Xiaohan Wu, Margaret E. Roberts, Rachel E. Stern, Benjamin L. Liebman, Amarnath Gupta, Luke Sanford, published in Sociological Methods & Research in 2025. The files provided allow users to replicate the results presented in the paper. Due to GitHub's file size limitations, this repository includes a smaller subset of the data for testing and demonstration purposes. The complete dataset for missingness estimation is available for download at the following link:
+This repository contains replication files for the paper **"Addressing Missingness in Serialized Bureaucratic Data: The Case of Chinese Courts"** by Xiaohan Wu, Margaret E. Roberts, Rachel E. Stern, Benjamin L. Liebman, Amarnath Gupta, Luke Sanford, published in Sociological Methods & Research in 2025. The files provided allow users to replicate the results presented in the paper. Due to GitHub's file size limitations, the replication data is shared via google drive. Please download the zip file using google cloud link, unzip and replace the data folder in this repository. The complete dataset for missingness estimation is available for download at the following link:https://drive.google.com/drive/folders/10m0h5PhBVUiJn8N01rCU4N9dbDQ8TZGx?usp=sharing.
 
 ## Repository Structure
 The repository is organized as follows:
@@ -10,52 +10,30 @@ The repository is organized as follows:
 ├── data/                # Cleaned datasets containing case ids and registartion date from Chinese court decisions
 │   ├── court13-17/      # Case id and registration date from civil, criminal and administrative litigation cases filed from 2013 to 2017
 │   ├── court18-22/      # Case id from civil, criminal and administrative first instance litigation cases filed from 2018 to 2022
+│   ├── validation/      # data for validation plots
+│   ├── courts.csv       # manually collected information from over 3500 courts in China
+│   ├── workday.csv      # calendar day and workday convertion, a day is labeled as "holiday" if it is weekend or a public holiday in China
 ├── code/                # Scripts for estimating court missingness and time to decision
-│   ├── transparency/    # Scripts for estimating court missingness
-│   ├── time-to-decision/# Scripts for estimating case filing date
+│   ├── court13-17/      # Scripts for estimating court missingness and time to decision for year 2013-2017
+│   ├── court18-22/      # Scripts for estimating case filing date
 │   ├── plots/           # Scripts for generating figures
-│   ├── tables/          # Scripts for generating tables
-├── results/          # Output files (tables, figures, logs, etc.)
+├── results/          # Output files (tables, figures, etc.)
 ├── README.md         # This file
 └── LICENSE           # License information
-```
-
-## Requirements
-To run the code and replicate the results, you will need the following software and packages:
-
-- **Programming Language:** R
-- **Required Packages:** 
-  - `ggplot`
-  - `lmtest` 
+``` 
 
 ## Data
-- **Source:** The case id and registration data is collected and processed by authors. The original case decisions are publicly available on China Judgements Online(https://wenshu.court.gov.cn/). 
+- **Source:** The case id and registration date are collected and cleaned by authors. The original case decisions are publicly available on China Judgements Online(https://wenshu.court.gov.cn/). 
 
 ## Running the Code
 To replicate the results, follow these steps:
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/[username]/[repository-name].git
-   ```
-2. Navigate to the repository directory:
-   ```sh
-   cd [repository-name]
-   ```
-3. Install required dependencies:
-   ```sh
-   [Command to install dependencies, e.g., `pip install -r requirements.txt`]
-   ```
-4. Run the main script:
-   ```sh
-   [Command to run the script, e.g., `python main.py` or `stata -b do analysis.do`]
-   ```
-5. The results will be saved in the `results/` directory.
-
-## Expected Output
-- **Tables:** Replication of tables presented in the paper.
-- **Figures:** Graphs and charts illustrating key results.
-- **Logs:** Any logs or messages generated during execution.
+1. Clone the repository
+2. Navigate to the repository directory
+3. Download data from google drive and replace the data folder
+4. Install required dependencies
+5. Read the notes at the top in each scripts carefully
+6. Run scripts from the code folder
 
 ## Contact
 For any questions or issues, please contact:
