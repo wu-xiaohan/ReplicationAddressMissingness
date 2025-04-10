@@ -41,10 +41,8 @@ For any questions or issues, please contact:
 - **GitHub Issues:** Open an issue [here](https://github.com/wu-xiaohan/ReplicationAddressMissingness/issues).
 
 ## License
-This project is licensed under the **[License Name]** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the LICENSE file for details.
 
 ---
-**Citation:** If you use these replication files in your work, please cite:
-
-> [Author(s)]. ([Year]). *[Paper Title]*. [Journal/Conference], [Volume]([Issue]), [Page Numbers]. [DOI/Link]
+**Citation:**
 
