@@ -10,7 +10,8 @@ The repository is organized as follows:
 ├── data/                # Cleaned datasets containing case ids and registartion date from Chinese court decisions
 │   ├── court13-17/      # Case id and registration date from civil, criminal and administrative litigation cases filed from 2013 to 2017
 │   ├── court18-22/      # Case id from civil, criminal and administrative first instance litigation cases filed from 2018 to 2022
-│   ├── validation/      # data for validation plots
+│   ├── dataforplots/    # data for plots
+│   ├── topic_model/     # data and results from topic model
 │   ├── courts.csv       # manually collected information from over 3500 courts in China
 │   ├── workday.csv      # calendar day and workday convertion, a day is labeled as "holiday" if it is weekend or a public holiday in China
 ├── code/                # Scripts for estimating court missingness and time to decision
