@@ -15,9 +15,10 @@ The repository is organized as follows:
 │   ├── workday.csv      # calendar day and workday convertion, a day is labeled as "holiday" if it is weekend or a public holiday in China
 ├── code/                # Scripts for estimating court missingness and time to decision
 │   ├── court13-17/      # Scripts for estimating court missingness and time to decision for year 2013-2017
-│   ├── court18-22/      # Scripts for estimating case filing date
-│   ├── plots/           # Scripts for generating figures
-├── results/          # Output files (tables, figures, etc.)
+│   ├── court18-22/      # Scripts for estimating court missingness for year 2013-2017
+│   ├── plot.R           # Scripts for generating figures
+├── results/          # Output files
+├── IndianCourts/          # Scripts for estimating missingness for Indian courts. 
 ├── README.md         # This file
 └── LICENSE           # License information
 ``` 
