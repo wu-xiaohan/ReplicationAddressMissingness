@@ -35,7 +35,8 @@ To replicate the results, follow these steps:
 3. Download data from google drive and replace the data folder
 4. Install required dependencies
 5. Read the notes at the top in each scripts carefully
-6. Run scripts from the code folder
+6. To generate all plots in the paper, run plot.R
+7. To replicate court missingness and time to decision estimation, check out corresponding code in code folder.
 
 ## Contact
 For any questions or issues, please contact:
