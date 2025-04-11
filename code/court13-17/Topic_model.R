@@ -50,7 +50,7 @@ out <- prepDocuments(processed$documents,
 ttd_stm <- stm(out$documents, out$vocab, K = 0, prevalence = ~ exceeds, data=out$meta, seed=1993)
 
 labelTopics(ttd_stm, n=10)
-prep <- estimateEffect(1:68 ~ difficult, ttd_stm, meta = out$meta, uncertainty = "Global")
+prep <- estimateEffect(1:68 ~ exceeds, ttd_stm, meta = out$meta, uncertainty = "Global")
 
 plot(prep, covariate = "exceeds",model = ttd_stm, method = "exceeds",main="",
      labeltype ="custom",cov.value1 = 0, cov.value2 = 1,custom.labels=c(1:68))
